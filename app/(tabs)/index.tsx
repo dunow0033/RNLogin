@@ -9,8 +9,19 @@ export default function HomeScreen() {
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={AppScreen} />
-          <Stack.Screen name="About" component={AboutScreen} />
+        <Stack.Screen 
+            name="Home" 
+            component={AppScreen}
+            options={{
+              headerShown: false
+            }} />
+          <Stack.Screen 
+              name="About" 
+              component={AboutScreen}
+              options={{
+                headerLeft: () => null,
+                headerShown: false
+              }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
