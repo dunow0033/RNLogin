@@ -46,11 +46,15 @@ const handleLogin = () => {
       </TouchableOpacity>
       <TouchableOpacity 
         style={{ borderRadius: 7, backgroundColor: '#FFF', padding: 10 }}>
-        <Text style={{ color: '#fff' }}>Login with Google</Text>
+        <Text style={{ color: 'black' }}>Login with Google</Text>
       </TouchableOpacity>
       <TouchableOpacity 
-        style={{ borderRadius: 7, backgroundColor: '#147EFB', padding: 10 }}>
+        style={{ borderRadius: 7, backgroundColor: 'green', padding: 10 }}>
         <Text style={{ color: '#fff' }}>Login with Facebook</Text>
+      </TouchableOpacity>
+      <TouchableOpacity 
+        style={{ borderRadius: 7, backgroundColor: '#FFF', padding: 10 }}>
+        <Text style={{ color: 'black' }}>Login As Guest</Text>
       </TouchableOpacity>
    </View>
   );
